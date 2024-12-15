@@ -26,6 +26,7 @@ import { Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import CloseIcon from "@mui/icons-material/Close";
 import { ImportContactsSharp } from "@mui/icons-material";
+import Logo from "../assets/logo.jpeg";
 
 const drawerWidth = 240;
 
@@ -183,8 +184,12 @@ export default function CustomAppBar({
 						<MenuIcon />
 					</IconButton>
 
-					<div className="">
-						<h1 className="text-3xl font-bold">IDICT</h1>
+					<div className=" rounded-2xl bg-white p-2">
+						<img
+							className="h-20 w-40"
+							src={Logo}
+							alt=""
+						/>
 					</div>
 					<Typography
 						variant="h4"

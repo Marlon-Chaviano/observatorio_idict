@@ -17,13 +17,13 @@ import {
 	GridRowEditStopReasons,
 } from "@mui/x-data-grid";
 
-import { UserDB } from "../interfaces/user";
 import { AlertDialogSlide } from "./AlertDialog";
 import { CustomizedSnackbars, TYPE_MESSAGES } from "./MessageAlerts";
 import { axiosInstance } from "../config/axios";
+import USUARIOS from "../data/usuarios.json";
 
 export const TableUserEditable = () => {
-	const [users, setusers] = React.useState<UserDB[]>([]);
+	const [users, setusers] = React.useState(USUARIOS);
 	const [openDialog, setopenDialog] = React.useState<boolean>(false);
 	const [openDialogDeleted, setopenDialogDeleted] =
 		React.useState<boolean>(false);
@@ -129,10 +129,6 @@ export const TableUserEditable = () => {
 		}
 		handleCloseDialogDeleted();
 	};
-
-	React.useEffect(() => {
-		axiosInstance.get("users").then((resp) => setusers(resp.data));
-	}, []);
 
 	const [rowModesModel, setRowModesModel] = React.useState<GridRowModesModel>(
 		{}

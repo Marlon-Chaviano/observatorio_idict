@@ -2,40 +2,39 @@ import { createContext } from "react";
 import { Patentes, registrosProps } from "./components/CustomTable";
 
 export interface Fuente {
-  editores: string;
-  frequency: number;
-  id: number;
-  id_eje: number | string;
-  is_monitoring: boolean;
-  materia: string;
-  organization: string;
-  ejeTematico?: string;
-  title: string;
-  url: string;
+	id: number;
+	title: string;
+	organization: string;
+	frequency: number;
+	is_monitoring: boolean;
+	editores: string;
+	materia: string;
+	url: string;
+	id_eje: number;
 }
 interface Eje {
-  id_eje: number;
-  nombre_eje: string;
-  esta_activ: boolean;
+	id_eje: number;
+	nombre_eje: string;
+	esta_activo: boolean;
 }
 
 export type ContextObservatory = {
-  registros: registrosProps[];
-  patentes: Patentes[];
-  fuentes: Fuente[];
-  ejes: Eje[];
+	registros: registrosProps[];
+	patentes: Patentes[];
+	fuentes: Fuente[];
+	ejes: Eje[];
 };
 
 export type DataFetched = {
-  data: ContextObservatory | null;
-  error: null | unknown;
+	data: ContextObservatory | null;
+	error: null | unknown;
 };
 
 const initialState: ContextObservatory = {
-  registros: [],
-  patentes: [],
-  fuentes: [],
-  ejes: [],
+	registros: [],
+	patentes: [],
+	fuentes: [],
+	ejes: [],
 };
 
 export const observatory = createContext(initialState);

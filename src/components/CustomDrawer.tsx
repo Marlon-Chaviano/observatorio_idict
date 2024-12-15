@@ -17,14 +17,14 @@ import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
 import SmartButtonIcon from "@mui/icons-material/SmartButton";
 import { useEffect, useState } from "react";
 import SignUp from "../pages/SingUp";
-import Logo from "../assets/logo.jpeg";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { RegisterFuente } from "../pages/RegisterFuente";
 import { TableUserEditable } from "./CustomTableUserEditable";
 import { TableFuenteEditable } from "./CustomTableFuenteEditable";
 import { DraggableDialog } from "./EstadisticaDialog";
-// import GraficasDialog from "./GraficasDialog";
+import Logo from "../assets/logo.jpeg";
+
 import JustGraficas from "../pages/JustGraficas";
 import { MonitorearPage } from "../pages/MonitorearPage";
 
@@ -77,8 +77,12 @@ export const CustomDrawerPermanent = () => {
 						}}
 					>
 						<Toolbar>
-							<div className="">
-								<h2 className="text-4xl font-bold">IDICT</h2>
+							<div className=" rounded-2xl bg-white p-2">
+								<img
+									className="h-20 w-40"
+									src={Logo}
+									alt=""
+								/>
 							</div>
 							<Typography
 								variant="h5"

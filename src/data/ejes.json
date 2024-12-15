@@ -1,0 +1,142 @@
+[
+	{
+		"id_eje": 1,
+		"nombre_eje": "ELEMENTOS NATIVOS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 2,
+		"nombre_eje": "SULFUROS Y SULFOSALES",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 3,
+		"nombre_eje": "HALOGENUROS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 4,
+		"nombre_eje": "OXIDOS E HIDRÓXIDOS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 5,
+		"nombre_eje": "NITRATOS, CARBONATOS Y BORATO",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 6,
+		"nombre_eje": "SULFATOS, CROMATOS, MOLIBDATOS Y WOLFRAMATOS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 7,
+		"nombre_eje": "FOSFATOS, VANADATOS Y ARSENIATOS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 8,
+		"nombre_eje": "EXTRACCIÓN DE METALES",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 9,
+		"nombre_eje": "CORROSIÓN",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 10,
+		"nombre_eje": "TERMODINÁMICA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 11,
+		"nombre_eje": "ELECTROQUÍMICA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 12,
+		"nombre_eje": "CRISTALOGRAFÍA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 13,
+		"nombre_eje": "CARACTERIZACIÓN DE MATERIALES",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 14,
+		"nombre_eje": "METALURGIA FERROSA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 15,
+		"nombre_eje": "METALURGIA NO FERROSA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 16,
+		"nombre_eje": "SOLDADURA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 17,
+		"nombre_eje": "NANOTECNOLOGÍA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 18,
+		"nombre_eje": "SUPERCONDUCTORES",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 19,
+		"nombre_eje": "OPERACIONES FÍSICAS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 20,
+		"nombre_eje": "OPERACIONES QUÍMICAS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 21,
+		"nombre_eje": "MINERÍA A CIELO ABIERTO",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 22,
+		"nombre_eje": "MINERÍA SUBTERRÁNEA",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 23,
+		"nombre_eje": "MINERÍA EN EL FONDO DEL MAR",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 24,
+		"nombre_eje": "CIRCUITO PRODUCTIVO",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 25,
+		"nombre_eje": "IMPACTO AMBIENTAL",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 26,
+		"nombre_eje": "COMPAÑÍAS MINERAS",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 27,
+		"nombre_eje": "SEGURIDAD",
+		"esta_activo": true
+	},
+	{
+		"id_eje": 28,
+		"nombre_eje": "MAQUINARIA",
+		"esta_activo": true
+	}
+]

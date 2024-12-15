@@ -10,8 +10,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
-import Hero from "../assets/photo_5132193281579527622_x.jpg";
-import { axiosInstance } from "../config/axios";
+import Logo from "../assets/logo.jpeg";
+import Usuarios from "../data/usuarios.json";
 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
@@ -34,22 +34,21 @@ export default function SignIn() {
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		const data = new FormData(event.currentTarget);
-
-		try {
-			const response = axiosInstance.post("login", data);
-			const user = await response;
-			if (user.data.error) {
-				setloginStatus(LOGIN_STATUS.FAILURE);
-			} else {
-				localStorage.setItem("user", JSON.stringify(user.data));
-				setloginStatus(LOGIN_STATUS.SUCCESS);
-				navigate("/main", {
-					replace: true,
-					state: { user: user.data },
-				});
-			}
-		} catch (error) {
+		const user =
+			Usuarios.find(
+				(user) =>
+					user.email == data.get("email") &&
+					user.password == data.get("password")
+			) || 0;
+		if (user == 0) {
 			setloginStatus(LOGIN_STATUS.FAILURE);
+		} else {
+			localStorage.setItem("user", JSON.stringify(user));
+			setloginStatus(LOGIN_STATUS.SUCCESS);
+			navigate("/main", {
+				replace: true,
+				state: { user: user },
+			});
 		}
 	};
 
@@ -143,7 +142,10 @@ export default function SignIn() {
 					</Box>
 
 					<div>
-						<h2 className="text-7xl font-bold text-blue-600">IDICT</h2>
+						<img
+							src={Logo}
+							alt=""
+						/>
 					</div>
 				</Box>
 			</Container>
