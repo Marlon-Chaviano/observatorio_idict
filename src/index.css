@@ -1,0 +1,11 @@
+.logo {
+  padding: 8px;
+  background: #fffffe;
+  display: flex;
+  align-items: center;
+  border-radius: 88% 12% 85% 15% / 0% 100% 0% 100%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
