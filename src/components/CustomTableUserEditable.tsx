@@ -131,7 +131,11 @@ export const TableUserEditable = () => {
 	};
 
 	React.useEffect(() => {
-		axiosInstance.get("users").then((resp) => setusers(resp.data));
+		const fetchUsers = async () => {
+			const res = await fetch("/src/data/users.json").then((res) => res.json());
+			setusers(res);
+		};
+		fetchUsers();
 	}, []);
 
 	const [rowModesModel, setRowModesModel] = React.useState<GridRowModesModel>(
