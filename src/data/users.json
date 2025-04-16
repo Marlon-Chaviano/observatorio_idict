@@ -1,0 +1,28 @@
+[
+	{
+		"id": 2,
+		"name": "Usuario",
+		"password": "user123*",
+		"apellido": "Generico",
+		"email": "user@gmail.com",
+		"organismo": "UCLV",
+		"provincia": "Villa Clara",
+		"municipio": "Remedios",
+		"direccion": "hermanos garcia #49",
+		"is_superuser": false,
+		"last_login": "2025-01-21 15:35:46.549157-05"
+	},
+	{
+		"id": 3,
+		"name": "Amed",
+		"password": "amed123*",
+		"apellido": "Leiva",
+		"email": "amed@gmail.com",
+		"organismo": "UCLV",
+		"provincia": "Villa Clara",
+		"municipio": "Placetas",
+		"direccion": "calle 23 y M",
+		"is_superuser": true,
+		"last_login": "2024-12-16 21:38:19.65515-05"
+	}
+]

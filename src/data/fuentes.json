@@ -1,0 +1,35 @@
+[
+	{
+		"id": 1,
+		"title": "Mineralogía",
+		"organization": "Minem\n",
+		"frequency": 10,
+		"is_monitoring": false,
+		"editores": "SCG",
+		"materia": "Geología",
+		"url": "https://revinfcientifica.sld.cu/index.php/ric/oai",
+		"id_eje": 1
+	},
+	{
+		"id": 2,
+		"title": "Patentes",
+		"organization": "Google",
+		"frequency": 10,
+		"is_monitoring": false,
+		"editores": "Google",
+		"materia": "Geología",
+		"url": "https://patents.google.com'",
+		"id_eje": 2
+	},
+	{
+		"id": 3,
+		"title": "Revista de Universidad de Moa",
+		"organization": "Universidad de Moa",
+		"frequency": 1,
+		"is_monitoring": true,
+		"editores": "Universidad de Moa",
+		"materia": "Revista científica",
+		"url": "https://revista.ismm.edu.cu/index.php/revistamg/oai?verb=ListRecords&metadataPrefix=oai_dc",
+		"id_eje": 21
+	}
+]

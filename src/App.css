@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.patent-btn {
+  all: unset;
+  background: #1876d1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 95px;
+  left: 148px;
+  z-index: 10;
+}
+.patent-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}

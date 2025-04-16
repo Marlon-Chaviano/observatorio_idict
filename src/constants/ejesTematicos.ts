@@ -1,0 +1,15 @@
+export const EJES_TEMATICOS = [
+	"Telecomunicaciones",
+	"Electroenergía",
+	"Medio Ambiente",
+	"Industria Ligera",
+	"Alimentación",
+	"Agroindustria",
+	"Turismo",
+	"Transporte",
+	"Redes hidráulicas",
+	"Construcciones",
+	"Salud",
+	"Biotecnología",
+	"Servicios profesionales",
+];
