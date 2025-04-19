@@ -10,6 +10,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
+import axios from "axios";
 // import Hero from "../assets/photo_5132193281579527622_x.jpg";
 
 export type User = {
@@ -52,7 +53,7 @@ export default function SignIn() {
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		console.log(event);
-		const users = await fetch("/src/data/users.json").then((res) => res.json());
+		const { data: users } = await axios.get("/data/users.json");
 		// const data = new FormData(event.currentTarget);
 
 		try {
