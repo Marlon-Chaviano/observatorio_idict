@@ -16,13 +16,13 @@ const JsonPage = () => {
 	useEffect(() => {
 		const FETCH = async () => {
 			try {
-				const { data: registros } = await axios.get("src/data/registros.json");
+				const { data: registros } = await axios.get("/data/registros.json");
 
-				const { data: patentes } = await axios.get("src/data/patentes.json");
+				const { data: patentes } = await axios.get("/data/patentes.json");
 
-				const { data: ejes } = await axios.get("src/data/ejes.json");
+				const { data: ejes } = await axios.get("/data/ejes.json");
 
-				const { data: fuentes } = await axios.get("src/data/fuentes.json");
+				const { data: fuentes } = await axios.get("/data/fuentes.json");
 
 				setDb({ registros, patentes, fuentes, ejes });
 			} catch (error) {
