@@ -97,7 +97,10 @@ export default function SignIn() {
 						alignItems: "center",
 					}}
 				>
-					<Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+					<Avatar
+						sx={{ m: 1, bgcolor: "" }}
+						className="bg-green-900"
+					>
 						<LockOutlinedIcon />
 					</Avatar>
 					<Typography
@@ -143,10 +146,17 @@ export default function SignIn() {
 
 						<button
 							type="submit"
-							className="px-4 py-2 w-full hover:bg-[#e1090b]/60 transition bg-[#e1090b] mx-auto my-4 text-white rounded-md font-bold uppercase tracking-wider"
+							className="px-4 py-2 w-full hover:bg-green-600/90 transition bg-green-600 mx-auto my-4 text-white rounded-md font-bold uppercase tracking-wider"
 						>
 							Iniciar Sesión
 						</button>
+						<div className="mx-auto">
+							<img
+								src="/images/octi.jpeg"
+								alt=""
+							/>
+						</div>
+
 						<Snackbar
 							open={loginStatus === LOGIN_STATUS.SUCCESS}
 							autoHideDuration={6000}

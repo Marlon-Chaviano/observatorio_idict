@@ -21,6 +21,7 @@ import { UserDB } from "../interfaces/user";
 import { AlertDialogSlide } from "./AlertDialog";
 import { CustomizedSnackbars, TYPE_MESSAGES } from "./MessageAlerts";
 import { axiosInstance } from "../config/axios";
+import axios from "axios";
 
 export const TableUserEditable = () => {
 	const [users, setusers] = React.useState<UserDB[]>([]);
@@ -132,7 +133,8 @@ export const TableUserEditable = () => {
 
 	React.useEffect(() => {
 		const fetchUsers = async () => {
-			const res = await fetch("/src/data/users.json").then((res) => res.json());
+			const { data: res } = await axios.get("/data/users.json");
+
 			setusers(res);
 		};
 		fetchUsers();

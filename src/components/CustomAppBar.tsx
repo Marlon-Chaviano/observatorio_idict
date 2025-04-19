@@ -172,6 +172,11 @@ export default function CustomAppBar({
 		<Box sx={{ display: "flex" }}>
 			<CssBaseline />
 			<AppBar
+				sx={{
+					background: "#fff",
+					color: "green",
+					padding: 1,
+				}}
 				position="fixed"
 				open={open}
 			>
@@ -200,11 +205,15 @@ export default function CustomAppBar({
 					<Typography
 						variant="h4"
 						component="div"
-						sx={{ flexGrow: 1 }}
+						sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}
 						style={{ fontWeight: "bolder" }}
 					>
 						{/* Aqui va el nombre de la empresa */}
-						OBSERVATORIO TECNOLÓGICO IDICT
+						{/* OCTI */}
+						<img
+							className="h-16 w-fit"
+							src="/images/octi.jpeg"
+						/>
 					</Typography>
 					{tipoGrafica != GRAFICOS.REGISTROS && (
 						<Button

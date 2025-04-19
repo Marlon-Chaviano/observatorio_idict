@@ -74,6 +74,8 @@ export const CustomDrawerPermanent = () => {
 						sx={{
 							width: `calc(100% - ${drawerWidth}px)`,
 							mr: `${drawerWidth}px`,
+							background: "#fff",
+							color: "green",
 						}}
 					>
 						<Toolbar>
@@ -86,7 +88,7 @@ export const CustomDrawerPermanent = () => {
 								component="div"
 								sx={{ flexGrow: 1 }}
 							>
-								Panel Administrativo
+								Panel Administrativo OCTI
 							</Typography>
 							{/* <Button
                 style={{ marginRight: "25px" }}

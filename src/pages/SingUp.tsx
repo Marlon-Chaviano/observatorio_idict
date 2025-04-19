@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
-import Button from "@mui/material/Button";
+
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Grid";
@@ -27,7 +27,7 @@ import { MUNICIPIOS_BY_PROVINCIAS, PROVINCIAS } from "../constants/provincias";
 const defaultTheme = createTheme({
 	palette: {
 		primary: {
-			main: "#ed2023",
+			main: "#333",
 		},
 	},
 });
@@ -359,14 +359,12 @@ export default function SignUp() {
 							direction="row"
 							sx={{ marginTop: "30px" }}
 						>
-							<Button
+							<button
+								className="bg-green-600 w-full p-4 rounded-xl text-white font-bold hover:bg-green-600/80 transition "
 								type="submit"
-								fullWidth
-								variant="contained"
-								sx={{ mt: 3, mb: 2 }}
 							>
 								Registrar Usuario
-							</Button>
+							</button>
 						</Stack>
 						<CustomizedSnackbars
 							open={loginStatus.status !== TYPE_MESSAGES.NOT_STATUS}
