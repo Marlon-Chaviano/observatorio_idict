@@ -15,16 +15,16 @@ const JsonPage = () => {
 	useEffect(() => {
 		const FETCH = async () => {
 			try {
-				const registros = await fetch("/src/data/registros.json").then((res) =>
+				const registros = await fetch("src/data/registros.json").then((res) =>
 					res.json()
 				);
-				const patentes = await fetch("/src/data/patentes.json").then((res) =>
+				const patentes = await fetch("src/data/patentes.json").then((res) =>
 					res.json()
 				);
-				const ejes = await fetch("/src/data/ejes.json").then((res) =>
+				const ejes = await fetch("src/data/ejes.json").then((res) =>
 					res.json()
 				);
-				const fuentes = await fetch("/src/data/fuentes.json").then((res) =>
+				const fuentes = await fetch("src/data/fuentes.json").then((res) =>
 					res.json()
 				);
 
